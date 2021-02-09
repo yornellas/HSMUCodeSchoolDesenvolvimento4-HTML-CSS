@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sua Experiência</title>
+</head>
+<body>
+    <form action="">
+        <h1>Lista de recomendações de restaurantes</h1>
+        <fieldset id="about">
+            <legend>SOBRE O RESTAURANTE</legend>
+            <label for="name">Nome do estabelecimento</label>
+            <input type="text" id="name">
+            <br>
+            <br>
+            <label for="adress">Endereço:</label>
+            <input type="text" id="adress">
+            <br>
+            <br>
+            <label for="tel">Telefone:</label>
+            <input type="tel" placeholder="(xx)xxxx-xxxx">
+            <br>
+            <br>
+            <label for="category">Categoria</label>
+            <input type="checkbox">Lanches
+            <input type="checkbox">Pizzas
+            <input type="checkbox">Hambúrgueres
+            <input type="checkbox">Japonesa
+            <input type="checkbox">Chinesa
+            <br>
+            <input type="checkbox">Outro
+            <input type="text" placeholder="Qual?">
+            <br>
+            <br>
+            <label for="faixa_valores">Faixa de Valor:</label>
+            <select name="faixa_valores" id="faixa_valores">
+                <option value="op1">$</option>
+                <option value="op2">$$</option>
+                <option value="op3">$$$</option>
+                <option value="op4">$$$$</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset id="experience">
+            <legend>CONTE SUA EXPERIÊNCIA</legend>
+            <label for="order">O que pediu?</label>
+            <input type="text" id="order">
+            <br>
+            <br>
+            <label for="value">Quanto foi?</label>
+            <input type="number" id="value" placeholder="R$">
+            <br>
+            <br>
+            <label for="delivery">Entregou rápido?</label>
+            <input type="radio" id="delivery"> Sim
+            <input type="radio" id="delivery"> Não
+            <br>
+            <br>
+            <label for="obs">Observações</label>
+            <textarea name="obs" id="obs" cols="30" rows="10"></textarea>
+        </fieldset>
+        <br>
+        <input type="button" id="cancel" value="Cancelar">
+        <input type="submit" id="save" value="Salvar">
+    </form>
+</body>
+</html>
